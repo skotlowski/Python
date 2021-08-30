@@ -1,6 +1,12 @@
 def run():
+    print('''Choose:
+1.load data
+2.export data
+3.analyze & predict''')
+
     options = ['load data', 'export data', 'analyze & predict']
     choice = input()
+
     try:
         choice = int(choice)
     except:
@@ -13,14 +19,4 @@ def run():
 
 
 if __name__ == '__main__':
-    print('''Choose:
-1.load data
-2.export data
-3.analyze & predict''')
     run()
-
-
-
-
-
-
