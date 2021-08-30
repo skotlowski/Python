@@ -4,7 +4,7 @@ def print_value_and_id(*args):
         print(f'id: {id(item)}')
 
 
-a, b, c = 10, 10, 10
+a, b, c = 10, 10, 10  # a = b = c = 10 - other way
 
 print_value_and_id(a, b, c)
 
@@ -12,8 +12,8 @@ a = 20
 
 print_value_and_id(a, b, c)
 
-lista = [1, 2, 3]
-a, b, c = lista, lista, lista
+numbers = [1, 2, 3]
+a, b, c = numbers, numbers, numbers
 
 a.append(4)
 
