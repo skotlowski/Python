@@ -16,7 +16,9 @@ for item in pages:
         print(f'Processing {webpage_name}')
         urllib.request.urlretrieve(webpage_url, path)
     except:
+        print('-' * 30)
         print(f'Failure processing web page {webpage_name}')
         break
 else:
+    print('-'*30)
     print(f'Web pages downloaded successfully!')
